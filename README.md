@@ -1,1 +1,2 @@
-LearnifyMe--project
+LearnifyMe 
+IMPLEMENTED FRONTEND FOR LearnifyMe
