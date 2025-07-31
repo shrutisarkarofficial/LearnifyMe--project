@@ -1,0 +1,504 @@
+/* Navbar */
+.navbar {
+  background-color: white;
+  padding: 8px 16px; /* Reduce the padding to make the navbar thinner */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* Navbar container */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  padding-left: 10px;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: purple;
+  margin-left: 0;
+}
+
+.logo-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+/* Buttons */
+.btn {
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Sign In - No border */
+.sign-in {
+  background-color: white;
+  color: purple;
+  border: none;
+}
+
+/* Sign Up - Styled button */
+.sign-up {  background-color: purple;
+  color: white;
+  border: 2px solid purple;
+}
+
+/* Button Hover & Active Effects */
+.btn:hover {
+  transform: scale(0.95);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: scale(0.9);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Hamburger Menu (Mobile) */
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+.nav-link {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: rgb(224, 109, 224);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .btn {
+    margin: 10px 0;
+    width: 80%;
+  }
+}
+.contact-container {
+  padding: 80px 20px;
+  max-width: 800px;
+  margin: auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.contact-container p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Style to align heading and text side by side */
+.contact-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.contact-row h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #0077cc;
+  flex: 0 0 120px; /* fixed width */
+}
+
+.contact-row p {
+  margin: 0;
+  flex: 1;
+}
+
+.contact-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #0077cc;
+  outline: none;
+}
+
+.contact-form button {
+  background-color: #0077cc;
+  color: white;
+  font-size: 1rem;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: fit-content;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #005fa3;
+}
+.profile-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+.profile-pic {
+  width: 50px;   /* increase from 35px */
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ccc;
+}
+.profile-dropdown {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1001;
+  min-width: 180px;
+}
+
+.dropdown-item {
+  margin: 8px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.sign-out-btn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+}
+
+.sign-out-btn:hover {
+  background-color: #cc0000;
+}
+.dashboard-container {
+  display: flex;
+  margin-top: 80px; /* space below the fixed navbar */
+  min-height: calc(100vh - 80px);
+}
+
+/* Sidebar styles */
+.sidebar {
+  width: 220px;
+  background-color: #f4f4f4;
+  padding: 0px;
+  border-right: 1px solid #ccc;
+}
+
+.sidebar h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+  cursor: pointer;
+  color: #0077cc;
+  font-weight: 500;
+}
+
+.sidebar ul li:hover {
+  text-decoration: underline;
+}
+
+/* Main content styles */
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+}
+.sidebar ul li {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* spacing between icon and text */
+  margin-bottom: 10px;
+  cursor: pointer;
+  color: #0077cc;
+  font-weight: 500;
+}
+.sidebar-item {
+  display: flex;
+  align-items: center; 
+  gap: 10px; 
+  font-size: 22px;         /* Bigger font */
+  font-weight: 600;
+  background-color: #f5f5f5; /* Light box */
+  padding: 12px 16px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.sidebar-item:hover {
+  background-color: #dcdcdc; /* Grey on hover */
+  
+}
+/* Dialog Overlay */
+.dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+/* Dialog Box */
+.dialog-box {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.dialog-box h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Inputs */
+.dialog-box input,
+.dialog-box textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+/* Buttons */
+.dialog-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.cancel-btn,
+.create-btn {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  background-color: #ccc;
+  color: #333;
+}
+
+.create-btn {
+  background-color: #0077cc;
+  color: white;
+}
+
+.cancel-btn:hover {
+  background-color: #bbb;
+}
+
+.create-btn:hover {
+  background-color: #005fa3;
+}
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+.dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dialog {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 400px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.dialog input, .dialog textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.dialog-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: -10px;
+}
+
+.courses-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.course-card {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  width: 250px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+.profile-dropdown {
+  position: absolute;
+  right: 0;
+  top: 60px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 200px;
+  z-index: 100;
+}
+
+.dropdown-profile-upload {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.profile-pic-dropdown {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.upload-text {
+  font-size: 12px;
+  color: #555;
+  margin-top: 5px;
+}
+
+.upload-label {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.dropdown-item {
+  padding: 6px 0;
+}
+
+.sign-out-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+
+

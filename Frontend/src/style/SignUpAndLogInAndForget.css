@@ -1,0 +1,339 @@
+.forget-password-container {
+  width: 500px;
+  height: 300px;
+  margin-left: 500px;
+  margin-top: 200px;
+  margin-bottom: 300px;
+  margin-right: 300px;
+  padding: 40px;
+  text-align: center;
+  background: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* Main container to split screen */
+.full-screen-container {
+  display: flex;
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+}
+/* Left half: Form */
+.left-half {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f9f9; /* Optional background */
+  padding: 20px;
+}
+
+/* Right half: Image */
+.right-half {
+  width: 50%;
+  background: url('../assets/exam_test.jpg') no-repeat center center/cover;
+}
+
+.signup-container {
+  width: 450px; /* Increased width for a bigger form */
+  margin: 40px auto;
+  padding: 10px; /* Increased padding for a larger look */
+  background-color: #f9f9f9;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 22px; /* Slightly larger title */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+label {
+  margin-bottom: 3px;
+  font-weight: bold;
+  font-size: 14px; /* Increased label font size */
+  display: block; /* Ensures label takes full width */
+}
+
+input {
+  margin-bottom: 4px;
+  margin-top: 2px; /* Adds space above input field */
+  padding: 6px; /* Increased padding for better readability */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px; /* Slightly larger text for better input visibility */
+  width: 100%; /* Makes inputs fill the container */
+}
+
+input:focus {
+  outline: none;
+  border-color: purple;
+  box-shadow: 0 0 5px purple;
+}
+
+.error {
+  color: red;
+  margin-top: -6px;
+  margin-bottom: 6px;
+  font-size: 14px; /* Slightly larger error messages for visibility */
+}
+
+button {
+  padding: 10px;
+  background-color: #800080;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 16px; /* Increased button text size */
+}
+.forget-link{
+ margin-bottom: 8px;
+}
+button:hover {
+  background-color: rgb(224, 109, 224);
+}
+
+.google-signup-button {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px; /* Increased font size for better visibility */
+  cursor: pointer;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  margin-top: 12px; /* Adds space between form and Google sign-up button */
+  width: 100%;
+  justify-content: center;
+  color: gray;
+  font-weight: bold;
+}
+
+.google-signup-button:hover {
+  background-color: #f5f5f5;
+  color: purple;
+  font-size: 15px;
+}
+
+.google-icon {
+  width: 24px; /* Slightly larger Google icon */
+  height: 24px;
+  margin-right: 10px;
+}
+
+.login-link {
+  margin-top: 12px; /* Adds space between Google sign-up button and login link */
+  text-align: center;
+  font-size: 18px; /* Slightly larger text for better readability */
+}
+.mobile-input {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adds spacing between select and input */
+}
+
+.mobile-input select {
+  width: 60px; /* Fixed width for country code dropdown */
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: white;
+}
+
+.mobile-input input {
+  flex: 1; /* Makes input take the remaining space */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.role-group {
+  display: flex;
+  align-items: center;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.role-group label {
+  font-weight: bold;
+  margin-right: 10px;
+  min-width: 70px;
+  font-size: 15px;
+}
+
+.role-options {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.role-options label {
+  display: flex;
+  align-items: center;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.role-options input[type="radio"] {
+  margin-right: 6px;
+}
+.role-options-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.role-error {
+  color: red;
+  font-size: 14px;
+  margin-top: 4px;
+  margin-left: 6px; /* Optional: aligns with radio group */
+}
+
+/* Password visibility toggle styles */
+.password-input-container {
+  position: relative;
+  width: 100%;
+}
+
+.password-field {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-field input {
+  flex: 1;
+  padding-right: 40px; /* Make space for the eye icon */
+}
+
+.password-toggle {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  color: #666;
+}
+
+.password-toggle:hover {
+  color: #333;
+}
+
+.password-toggle svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* 📌 RESPONSIVE DESIGN */
+
+/* For tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .signup-container {
+    width: 80%;
+    padding: 15px;
+    max-width: 400px; /* Smaller size for better look */
+    margin: 20px auto; /* Keeps it centered */
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  label {
+    font-size: 14px;
+  }
+
+  input,
+  select,
+  button {
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  .mobile-input {
+    flex-direction: row;
+    gap: 5px;
+    max-width: 350px; /* Smaller input field */
+  }
+
+  .mobile-input select {
+    width: 70px; /* Slightly smaller on mobile */
+    font-size: 14px;
+  }
+
+  .mobile-input input {
+    font-size: 14px;
+  }
+  .forget-password-container{
+    width: 400px;
+  height: 325px;
+  margin-left: 100px;
+  margin-top: 200px;
+  margin-bottom: 300px;
+  margin-right: 100px;
+  padding: 30px;
+  text-align: center;
+  background: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 12px;
+  }
+}
+
+/* For mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .right-half {
+    display: none;
+  }
+
+  .left-half {
+    width: 100%; /* Make the form section take full width */
+  }
+  .forget-password-container{
+    width: 150px;
+  height: 150px;
+  margin-left: 0px;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  padding: 2px;
+  text-align: center;
+  background: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 5px;
+  }
+  .forget-password-container h2{
+    font-size: 12px;
+  }
+  .forget-password-container input{
+    padding:0%;
+    font-size: 10px;
+
+  }
+  .forget-password-container button{
+    padding: 0px;
+    font-size: 8px;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  .forget-password-container .login-link{
+    font-size: 6px;
+  }
+  
+}

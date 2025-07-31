@@ -1,0 +1,581 @@
+.course-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  color: #333;
+}
+
+.nav-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.course-title {
+  font-size: 30px;
+  margin: 0;
+}
+
+.course-desc {
+  font-size: 22px;
+  color: #555;
+  margin-top: 4px;
+}
+
+.back-button {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  color: red;
+}
+
+.course-content {
+  padding: 30px;
+}
+.course-page-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.course-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  color: #333;
+}
+
+.nav-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.course-title {
+  font-size: 22px;
+  margin: 0;
+}
+
+.course-desc {
+  font-size: 14px;
+  color: #555;
+  margin-top: 4px;
+}
+
+.back-button {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Layout */
+.course-layout {
+  display: flex;
+  flex: 1;
+}
+
+/* Sidebar */
+.course-sidebar {
+  width: 220px;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+}
+
+.course-sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.course-sidebar li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.course-sidebar li:hover {
+  color: #007bff;
+}
+
+.sidebar-icon {
+  margin-right: 10px;
+}
+
+/* Main Content */
+.course-main-content {
+  flex: 1;
+  padding: 30px;
+  background-color: #ffffff;
+}
+.course-sidebar li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.course-sidebar li:hover {
+  background-color: #e0e0e0;
+  color: #007bff;
+}
+
+.course-sidebar li.active {
+  background-color: #a7a9aa;
+  color: rgb(24, 23, 23);
+}
+
+.notes-section {
+  padding: 16px;
+}
+
+.notes-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: flex-start;
+}
+.note-card {
+  width: 100%;
+  border-radius: 8px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+.note-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.note-actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.2s ease;
+}
+
+.note-actions .view-btn {
+  color: white;
+  background-color: #880ca4;
+  padding: 4px 12px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.note-actions .view-btn:hover {
+  background-color: #c375d2;
+}
+
+.note-actions .delete-btn {
+  color: #f44336;
+}
+
+.note-actions .delete-btn:hover {
+  background-color: rgba(244, 67, 54, 0.1);
+}
+
+.view-btn, .delete-btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.view-btn {
+  background-color: #4CAF50;
+  color: white;
+  flex: 1;
+}
+
+.view-btn:hover {
+  background-color: #45a049;
+}
+
+.delete-btn {
+  background-color: #ff5252;
+  color: white;
+  width: 32px;
+  height: 32px;
+}
+
+.delete-btn:hover {
+  background-color: #ff1744;
+}
+
+.note-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.upload-box {
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.upload-box:hover {
+  border-color: #666;
+  background-color: #f5f5f5;
+}
+
+.upload-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.upload-card {
+  cursor: pointer;
+  border: 2px dashed #aaa;
+  background-color: #fafafa;
+}
+
+.upload-card input {
+  display: none;
+}
+.exam-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.exam-modal {
+  background: #fff;
+  padding: 20px 25px;
+  border-radius: 8px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close-btn {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.modal-body label {
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.modal-body input {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #aaa;
+  margin-top: 4px;
+}
+
+.create-exam-btn {
+  margin-top: 20px;
+  padding: 10px;
+  border: none;
+  background-color: purple;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.exam-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* space between each row */
+  margin-top: 3rem;  background-color: plum;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+  border: 1px solid #ddd;
+  margin:2rem auto;
+  
+}
+
+
+.exam-card {
+  border: 1px solid #ddd;
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.2s;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.exam-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.student-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.student-header,
+.student-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border-bottom: 1px solid #ddd;
+  font-size: 16px;
+}
+
+.student-header {
+  font-weight: bold;
+  background-color: #f5f5f5;
+}
+
+.student-row {
+  background-color: #ffffff;
+  transition: background-color 0.2s ease;
+}
+
+.student-row {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border-bottom: 1px solid #ddd;
+  font-size: 16px;
+  background-color: #ffffff;
+  transition: background-color 0.2s ease;
+}
+
+.student-card {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  background-color: #e7caeb;
+  border-radius: 0cap 8px;
+}
+.student-card:hover {
+  background-color: #d6b2d7;
+}
+
+.student-name {
+  font-size: 20px;
+  font-weight: 500;
+  color: #192230;
+}
+
+.enrolled-datetime {
+  font-size: 18px;
+  color: #28384f;
+  text-align: right;
+}
+/* }
+.students-section {
+  padding: 24px;
+  background-color: #fff;
+  min-height: 100%;
+}
+
+.students-section .max-w-7xl {
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.students-section .bg-white {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.students-section .flex {
+  display: flex;
+}
+
+.students-section .items-center {
+  align-items: center;
+}
+
+.students-section .justify-between {
+  justify-content: space-between;
+}
+
+.students-section .border-b {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.students-section .last\:border-b-0:last-child {
+  border-bottom: none;
+}
+
+.students-section .hover\:bg-gray-50:hover {
+  background-color: #f9fafb;
+}
+
+.students-section button {
+  white-space: nowrap;
+} */
+
+/* Styling for delete button */
+.students-section button {
+  width: 100%;
+  padding: 6px 12px;
+  border-radius: 4px;
+  background-color: #ef4444;  /* Tailwind's red-500 */
+}
+
+.students-section button:hover {
+  background-color: #dc2626;  /* Tailwind's red-600 */
+}
+
+/* Add custom scrollbar styling */
+.students-section .overflow-x-auto {
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 #f1f5f9;
+}
+
+.students-section .overflow-x-auto::-webkit-scrollbar {
+  height: 6px;
+}
+
+.students-section .overflow-x-auto::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 3px;
+}
+
+.students-section .overflow-x-auto::-webkit-scrollbar-thumb {
+  background-color: #cbd5e1;
+  border-radius: 3px;
+}
+
+/* Styling for the score section*/
+.score-section {
+  padding: 1.5rem;
+}
+
+.score-section h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #6b21a8; /* purple-800 */
+  margin-bottom: 1.5rem;
+}
+
+.score-table {
+  background-color: #ffffff;
+  border-radius: 0.75rem; /* rounded-xl */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.score-table table {
+  width: 100%;
+  table-layout: auto;
+}
+
+.score-table thead {
+  background-color: #f3e8ff; /* purple-100 */
+  color: #6b21a8; /* purple-800 */
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
+}
+
+.score-table th,
+.score-table td {
+  padding: 0.75rem 1.5rem;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.score-table tbody tr {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb; /* divide-gray-200 */
+}
+
+.score-table tbody tr.submitted {
+  background-color: #ecfdf5; /* green-50 */
+}
+
+.score-table tbody tr.not-submitted {
+  background-color: #fef2f2; /* red-50 */
+}
+
+.score-table td.name {
+  font-weight: 500;
+  color: #1f2937; /* gray-800 */
+}
+
+.score-table td.title,
+.score-table td.score,
+.score-table td.submittedAt {
+  color: #374151; /* gray-700 */
+}
+
+.score-table td.badge span {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.score-table td.badge .submitted-badge {
+  background-color: #bbf7d0; /* green-200 */
+  color: #166534; /* green-800 */
+}
+
+.score-table td.badge .not-submitted-badge {
+  background-color: #fecaca; /* red-200 */
+  color: #991b1b; /* red-800 */
+}
+
+.score-table td.empty {
+  text-align: center;
+  color: #6b7280; /* gray-500 */
+}
